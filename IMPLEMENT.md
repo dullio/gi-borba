@@ -103,6 +103,8 @@ Há apenas o seu ritmo, e alguém ao seu lado para que você não precise ir soz
 
 Giovana Borba
 
+Foto da Gi `C:\Users\Dullio Macedo\OneDrive\Documents\Arquivos Antigravity\workspaces\giborba\website-gi-borba\gi-borba\images\prof-yoga-gi-borba.png`
+
 Professora de yoga e acro yoga, bailarina clássica, cirurgiã-dentista e mãe de três meninas.
 Formada em mais de seis modalidades: Hatha, Vinyasa, Yoga Restaurativo, Yoga Somático, SwáSthya e Yoga para Gestantes, com certificação em Acroyoga pela Escola de Montreal, referência internacional na prática.
 

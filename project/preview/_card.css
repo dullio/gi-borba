@@ -1,0 +1,51 @@
+/* Shared base for preview/ cards. Each card renders ~700×variable px. */
+@import url('../colors_and_type.css');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--gb-bg);
+  width: 700px;
+  overflow: hidden;
+}
+
+.card-frame {
+  width: 700px;
+  padding: 24px 28px;
+  background: var(--gb-bg);
+  box-sizing: border-box;
+}
+
+/* Tighter typography overrides — cards should sit nicely */
+.card-frame h1, .card-frame h2, .card-frame h3, .card-frame h4, .card-frame p {
+  margin: 0;
+}
+
+.swatch-row { display: flex; gap: 12px; }
+.swatch {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: var(--gb-shadow-sm);
+}
+.swatch-color { height: 64px; }
+.swatch-info {
+  padding: 10px 12px;
+  background: var(--gb-white);
+}
+.swatch-name {
+  font-family: var(--gb-font-body);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gb-fg);
+  margin: 0 0 2px;
+}
+.swatch-hex {
+  font-family: var(--gb-font-mono);
+  font-size: 10px;
+  color: var(--gb-taupe-dark);
+}

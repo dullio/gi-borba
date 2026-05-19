@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gi Borba Yoga — Website UI Kit</title>
+
+<meta name="ext-resource-dependency" content="https://images.unsplash.com/photo-1545389336-cf090694435e?w=2400&q=80&auto=format&fit=crop" data-resource-id="heroPhoto">
+
+<template id="__bundler_thumbnail">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
+    <defs>
+      <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#F7F2EB"/>
+        <stop offset="50%" stop-color="#EDE5D8"/>
+        <stop offset="100%" stop-color="#D8E8CA"/>
+      </linearGradient>
+    </defs>
+    <rect width="240" height="240" fill="url(#bg)"/>
+    <text x="120" y="120" text-anchor="middle" font-family="Georgia, serif" font-size="44" font-style="italic" fill="#3E2D1C">Gi Borba</text>
+    <text x="120" y="158" text-anchor="middle" font-family="sans-serif" font-size="11" letter-spacing="3" fill="#9A7F5F">— Y O G A —</text>
+  </svg>
+</template>
+
+<link rel="stylesheet" href="../../colors_and_type.css">
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body { background: var(--gb-bg); }
+
+  @keyframes gb-fade-up {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes gb-fade-in {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+
+  /* The hero children fade up on load */
+  #inicio > * > * { animation: gb-fade-up 0.8s var(--gb-ease) both; }
+  #inicio > * > *:nth-child(2) { animation-delay: 0.1s; }
+  #inicio > * > *:nth-child(3) { animation-delay: 0.2s; }
+  #inicio > * > *:nth-child(4) { animation-delay: 0.3s; }
+
+  /* Custom focus styles globally */
+  :focus-visible {
+    outline: 2px solid var(--gb-olive);
+    outline-offset: 2px;
+  }
+</style>
+</head>
+<body>
+<div id="root"></div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<script type="text/babel" src="primitives.jsx"></script>
+<script type="text/babel" src="BreathingSection.jsx"></script>
+<script type="text/babel" src="Nav.jsx"></script>
+<script type="text/babel" src="Hero.jsx"></script>
+<script type="text/babel" src="StatsBar.jsx"></script>
+<script type="text/babel" src="ProgramSection.jsx"></script>
+<script type="text/babel" src="InspireTrip.jsx"></script>
+<script type="text/babel" src="QuoteSection.jsx"></script>
+<script type="text/babel" src="ContactForm.jsx"></script>
+<script type="text/babel" src="ContactSection.jsx"></script>
+<script type="text/babel" src="Footer.jsx"></script>
+
+<script type="text/babel">
+  const { useState, useEffect, useRef } = React;
+
+  function App() {
+    const [active, setActive] = useState('inicio');
+    const [showModal, setShowModal] = useState(false);
+    const formSectionRef = useRef(null);
+
+    const navigate = (id) => {
+      setActive(id);
+      // depoimentos lives inside QuoteSection, others have direct ids
+      const targetId = id === 'sobre' ? 'depoimentos' : id; // "Sobre" doesn't have a dedicated section in this kit
+      const el = document.getElementById(targetId);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    };
+
+    // Track active section on scroll
+    useEffect(() => {
+      const ids = ['inicio', 'programa', 'inspire', 'depoimentos', 'contato'];
+      const onScroll = () => {
+        const y = window.scrollY + 200;
+        for (let i = ids.length - 1; i >= 0; i--) {
+          const el = document.getElementById(ids[i]);
+          if (el && el.offsetTop <= y) {
+            setActive(ids[i]);
+            return;
+          }
+        }
+      };
+      window.addEventListener('scroll', onScroll, { passive: true });
+      return () => window.removeEventListener('scroll', onScroll);
+    }, []);
+
+    const openModal = () => setShowModal(true);
+    const closeModal = () => setShowModal(false);
+
+    return (
+      <>
+        <Nav active={active} onNavigate={navigate} onCTA={openModal} />
+        <Hero
+          onPrimary={openModal}
+          onSecondary={() => navigate('depoimentos')}
+        />
+        <StatsBar />
+
+        <BreathingSection tone="cream">
+          Aqui você <em style={{ fontStyle: 'normal', color: 'var(--gb-olive)' }}>respira</em>.
+          O resto, a gente conversa.
+        </BreathingSection>
+
+        <ProgramSection onReserve={openModal} />
+
+        <BreathingSection tone="beige" attribution="— uma aluna, depois da 3ª aula">
+          "Pela primeira vez em anos, sentei comigo<br/>sem pedir desculpa pelo que sinto."
+        </BreathingSection>
+
+        <InspireTrip onCTA={openModal} />
+
+        <BreathingSection tone="cream" motifs={true}>
+          Não é sobre <em style={{ fontStyle: 'normal', color: 'var(--gb-olive)' }}>postura perfeita</em>.<br/>
+          É sobre <em>voltar para casa</em> — dentro de você.
+        </BreathingSection>
+
+        <QuoteSection />
+        <ContactSection />
+        <Footer />
+        {showModal && <ContactForm onSubmit={() => setTimeout(closeModal, 2200)} onClose={closeModal} />}
+      </>
+    );
+  }
+
+  ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+</body>
+</html>
