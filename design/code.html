@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Gi Borba Yoga | Resgate e Presença</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&amp;family=Jost:wght@300;400;500;600&amp;family=Dancing+Script:wght@400;500;600;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-low": "#f8f3ec",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-fixed-dim": "#cdc897",
+                    "surface-container-highest": "#e7e2db",
+                    "surface-bright": "#fef9f2",
+                    "on-tertiary-fixed-variant": "#354e1b",
+                    "on-primary": "#ffffff",
+                    "surface-variant": "#e7e2db",
+                    "outline-variant": "#cac7b8",
+                    "error-container": "#ffdad6",
+                    "secondary": "#715b3a",
+                    "outline": "#7a776b",
+                    "on-primary-container": "#fdf8c3",
+                    "tertiary-fixed-dim": "#b2d090",
+                    "inverse-surface": "#32302c",
+                    "beige-mid": "#D9CEBB",
+                    "primary-fixed": "#e9e4b1",
+                    "on-tertiary-container": "#e2ffbe",
+                    "surface-tint": "#636038",
+                    "on-error-container": "#93000a",
+                    "primary": "#5c5932",
+                    "brown-mid": "#6B4C32",
+                    "on-secondary-fixed-variant": "#584325",
+                    "tertiary-container": "#5d7841",
+                    "on-background": "#1d1c17",
+                    "beige-light": "#EDE5D8",
+                    "olive-muted": "#C8C5A3",
+                    "secondary-container": "#fadbb2",
+                    "cana-pale": "#D8E8CA",
+                    "taupe-dark": "#9A7F5F",
+                    "surface-container-high": "#ece7e1",
+                    "terracotta": "#C47A52",
+                    "on-primary-fixed-variant": "#4a4822",
+                    "on-secondary-container": "#765f3e",
+                    "on-error": "#ffffff",
+                    "tertiary": "#465f2b",
+                    "surface-dim": "#ded9d3",
+                    "surface-container": "#f2ede6",
+                    "secondary-fixed-dim": "#e0c29a",
+                    "on-tertiary-fixed": "#0e2000",
+                    "on-secondary-fixed": "#281901",
+                    "white": "#FDFAF6",
+                    "inverse-primary": "#cdc897",
+                    "error": "#ba1a1a",
+                    "cream": "#F7F2EB",
+                    "inverse-on-surface": "#f5f0e9",
+                    "on-primary-fixed": "#1e1c00",
+                    "primary-container": "#757248",
+                    "brown-dark": "#3E2D1C",
+                    "on-surface": "#1d1c17",
+                    "surface": "#fef9f2",
+                    "on-background": "#1d1c17",
+                    "on-tertiary": "#ffffff",
+                    "secondary-fixed": "#fddeb5",
+                    "olive-light": "#969370",
+                    "beige-dark": "#C8B99A",
+                    "background": "#fef9f2",
+                    "on-surface-variant": "#49473c",
+                    "tertiary-fixed": "#cdeda9",
+                    "on-secondary": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "xs": "4px",
+                    "xl": "64px",
+                    "md": "16px",
+                    "sm": "8px",
+                    "2xl": "96px",
+                    "lg": "32px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Jost"],
+                    "headline-xl": ["Cormorant Garamond"],
+                    "eyebrow": ["Jost"],
+                    "headline-md": ["Cormorant Garamond"],
+                    "body-md": ["Jost"],
+                    "headline-sm": ["Cormorant Garamond"],
+                    "body-sm": ["Jost"],
+                    "label-caps": ["Jost"],
+                    "headline-lg": ["Cormorant Garamond"],
+                    "script": ["Dancing Script"]
+            },
+            "fontSize": {
+                    "body-lg": ["17px", {"lineHeight": "1.8", "fontWeight": "400"}],
+                    "headline-xl": ["96px", {"lineHeight": "1.05", "fontWeight": "300"}],
+                    "eyebrow": ["10px", {"lineHeight": "1", "letterSpacing": "0.28em", "fontWeight": "500"}],
+                    "headline-md": ["28px", {"lineHeight": "1.2", "fontWeight": "400"}],
+                    "body-md": ["15px", {"lineHeight": "1.8", "fontWeight": "300"}],
+                    "headline-sm": ["22px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                    "body-sm": ["13px", {"lineHeight": "1.7", "fontWeight": "300"}],
+                    "label-caps": ["11px", {"lineHeight": "1", "letterSpacing": "0.2em", "fontWeight": "500"}],
+                    "headline-lg": ["56px", {"lineHeight": "1.15", "fontWeight": "300"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .leaf-float {
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(5deg); }
+        }
+        .fade-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #D9CEBB, transparent);
+        }
+        body {
+            background-color: #F7F2EB;
+        }
+    </style>
+</head>
+<body class="font-body-md text-on-surface selection:bg-olive-muted/30">
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-0 w-full flex justify-between items-center px-8 py-4 z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant/30 shadow-sm shadow-brown-dark/5">
+<div class="font-headline-md text-headline-md tracking-tight text-primary">Gi Borba Yoga</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-label-caps text-label-caps text-primary border-b border-primary pb-1" href="#hero">Resgate</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#sobre">Sobre</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#modalidades">Modalidades</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#precos">Preços</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#faq">FAQ</a>
+<button class="bg-primary text-white font-label-caps text-label-caps px-6 py-3 rounded-full hover:bg-brown-mid transition-all duration-300 transform hover:scale-105 active:scale-95 shadow-lg shadow-primary/20">
+                Agendar Aula
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center justify-center pt-24 px-8 overflow-hidden" id="hero">
+<div class="absolute inset-0 z-0">
+<img alt="Mulher praticando yoga em um ambiente sereno" class="w-full h-full object-cover opacity-20 scale-105" data-alt="A serene woman practicing yoga in a sun-drenched, minimalist studio with warm beige walls and soft morning light. The atmosphere is peaceful and grounded, with a botanical clean aesthetic. The image features soft shadows and a neutral color palette of creams, olives, and warm browns, perfectly capturing a moment of quiet strength and inner peace." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmFoVqTi_7Ngis0d-Ljv6jDOFRQk0nFAumYmPA8b1Dpnjc3nr_PppTq3Xk2sfBcH1XX4jPb0MiB3bi0938qzJqI64mSX_9NK2J8vzqa9Jqgng8-eRWf-c0XFLah_T0bvy9hkhCY3LL_5ItxEmHrmNXwnYRe6Ogdpl-sWzl0pdMfR-7kLhjGPhwDr8WPhDn5vuovTqPKBeDDZTspTlqYLiij4VvoOdBhfycR7mCEsxLYPyVNrep-E8cC77uAir6p7eUBeQw8sPekA"/>
+</div>
+<div class="relative z-10 text-center max-w-[900px]">
+<span class="font-label-caps text-label-caps text-taupe-dark mb-4 block tracking-[0.3em]">BEM-VINDA AO SEU CENTRO</span>
+<h1 class="font-headline-xl text-headline-xl text-primary italic mb-6 leading-tight">
+                Você não desapareceu.<br/>
+<span class="not-italic font-light">Você se perdeu.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-2xl mx-auto">
+                O resgate da sua essência não é um destino, é um retorno. Através do yoga, reconectamos os fios da presença para que você volte a se sentir em casa dentro de si mesma.
+            </p>
+<div class="flex flex-col md:flex-row gap-6 justify-center items-center">
+<button class="bg-primary text-white font-label-caps text-label-caps px-10 py-5 rounded-full hover:bg-brown-mid transition-all shadow-xl shadow-primary/10">
+                    INICIAR MEU RESGATE
+                </button>
+<a class="font-label-caps text-label-caps text-primary border-b border-primary/30 hover:border-primary transition-all pb-1 group flex items-center gap-2" href="#modalidades">
+                    VER MODALIDADES <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Decorative Elements -->
+<span class="material-symbols-outlined absolute top-1/4 left-10 text-olive-muted/20 text-9xl leaf-float" style="font-variation-settings: 'wght' 100">eco</span>
+<span class="material-symbols-outlined absolute bottom-1/4 right-10 text-taupe-dark/20 text-9xl leaf-float" style="font-variation-settings: 'wght' 100; animation-delay: 2s">spa</span>
+</section>
+<!-- Problema + Promessa -->
+<section class="py-2xl px-8 bg-surface-container-low">
+<div class="max-w-[800px] mx-auto text-center">
+<div class="fade-divider mb-12 flex justify-center items-center">
+<span class="bg-surface-container-low px-4 text-taupe-dark material-symbols-outlined">circle</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-brown-dark mb-8 italic">O ritmo do mundo tenta te silenciar.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                Entre o barulho das notificações e a pressa das expectativas, algo precioso acaba ficando para trás: a sua voz interna. O yoga que praticamos aqui não é sobre performance ou contorcionismo. É sobre criar um hiato sagrado onde você pode, finalmente, se ouvir de novo. É um convite para desacelerar o passo e acelerar o encontro.
+            </p>
+<div class="font-script text-headline-md text-terracotta mt-8">Resgate é o ato de se buscar de volta.</div>
+</div>
+</section>
+<!-- Este é o seu lugar se... -->
+<section class="py-2xl px-8 max-w-[1200px] mx-auto grid md:grid-cols-2 gap-16 items-center">
+<div>
+<span class="font-label-caps text-label-caps text-taupe-dark mb-4 block">IDENTIFICAÇÃO</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-8">Este é o seu lugar se...</h2>
+<ul class="space-y-6">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-terracotta" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Sente que está vivendo no "piloto automático" e mal percebe o dia passar.</p>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-terracotta" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Busca uma atividade física que também acolha sua saúde mental e emocional.</p>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-terracotta" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Deseja reconectar-se com sua feminilidade de forma madura e potente.</p>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-terracotta" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Sente necessidade de um grupo que valorize a autenticidade sobre a perfeição.</p>
+</li>
+</ul>
+</div>
+<div class="relative group">
+<div class="absolute inset-0 bg-cana-pale/30 rounded-[40px] rotate-3 transition-transform group-hover:rotate-1"></div>
+<img alt="Meditação serena" class="relative z-10 w-full aspect-[4/5] object-cover rounded-[40px] shadow-2xl" data-alt="A close-up photograph of a woman in her 40s meditating with a soft, authentic expression. She is wearing high-quality linen yoga wear in a muted olive tone. The lighting is golden hour, casting a warm glow and long, soft shadows. The background is a minimalist, organic space with a single green branch. The aesthetic is Earth Luxe, emphasizing grounded sophistication and quiet strength." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfx7U-1RbFl9em_ckaOvoLybozEyRoLJEfc32a1qZAr8cK1Y2RxN6gVQfi_Yne2PXOj9Fptv1cn9brDPjrNqoBNJYKUMx57r8zAoYX5diyxbdrmnVwO2LGyb6Kn0-nqfst_WlBeeqCfbyMCoi0dx7HT2qv8IE8HWuEf1mA-HtV6hls_CxzryQ03CvfLS93CIEYYOpBJR5TgoaJqTmOrlajCXQJVx-1K6kvrWD1S-XMg3hFuYP_KZJFWOXRr5X4Qs0F-gUW_YlsUw"/>
+</div>
+</section>
+<!-- Sobre Gi Borba -->
+<section class="py-2xl px-8 bg-cream" id="sobre">
+<div class="max-w-[1200px] mx-auto flex flex-col md:flex-row gap-20 items-center">
+<div class="w-full md:w-1/2 order-2 md:order-1">
+<div class="relative inline-block">
+<img alt="Gi Borba" class="rounded-full w-80 h-80 object-cover border-8 border-white shadow-xl" data-alt="A professional and elegant portrait of a woman yoga instructor with a serene and welcoming smile. She has an aura of maturity and wisdom. The lighting is soft and natural, emphasizing a botanical clean look. She is positioned against a warm cream background, dressed in simple, sophisticated yoga attire in a taupe color. The overall mood is approachable, professional, and deeply grounded." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3sxv9BSTMO-wn255LtnbBrbgbe1RwjIreRJj6xkY-sGFOXepQpa-jCKHLId8QNAM2t5H9Jaei5_VJE0idR5zuxCme2dDo_kAQhY7Tg0hnqhyYap5DqHE3UF019ENgD_yeSO1S6bGfl2-7V1F_rWQv2DG5tlVLhvNHUtJKovfsBdKJ6kLjsKk0S8T8n2AyRIz5fu7BfUSbBQrbW8bDqRUtpTOF1j-rcC6gKp5HaXNiTki_pXwmOgVHVwQ8DLm-P1zuQpZ6jVKo6g"/>
+<div class="absolute -bottom-4 -right-4 bg-terracotta text-white p-6 rounded-full shadow-lg font-script text-headline-sm">Gi Borba</div>
+</div>
+<div class="mt-12 space-y-6">
+<h3 class="font-headline-md text-headline-md text-primary">Uma guia no seu retorno ao centro.</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Com mais de 10 anos de jornada no yoga, Gi Borba acredita que a prática é uma ferramenta de resgate pessoal. Sua abordagem foca em mulheres que buscam não apenas flexibilidade física, mas a resiliência emocional necessária para navegar a vida com autenticidade.
+                    </p>
+</div>
+</div>
+<div class="w-full md:w-1/2 order-1 md:order-2">
+<span class="font-label-caps text-label-caps text-taupe-dark mb-4 block">A MESTRA</span>
+<h2 class="font-headline-lg text-headline-lg text-brown-dark mb-8">Onde a técnica encontra a alma.</h2>
+<div class="grid grid-cols-2 gap-8">
+<div class="p-6 bg-white/50 rounded-2xl border border-beige-mid/30">
+<span class="font-headline-md text-headline-md text-primary block mb-2">500h+</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Formação Certificada</span>
+</div>
+<div class="p-6 bg-white/50 rounded-2xl border border-beige-mid/30">
+<span class="font-headline-md text-headline-md text-primary block mb-2">2k+</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Alunas Transformadas</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Caminhos para o seu Resgate -->
+<section class="py-2xl px-8 max-w-[1200px] mx-auto" id="modalidades">
+<div class="text-center mb-16">
+<span class="font-label-caps text-label-caps text-taupe-dark mb-4 block">ESCOLHA SEU CAMINHO</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">Modalidades de Prática</h2>
+</div>
+<div class="grid md:grid-cols-4 gap-8">
+<!-- Yoga Online -->
+<div class="group bg-white rounded-[20px] overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-beige-mid/20 flex flex-col">
+<div class="h-48 overflow-hidden relative">
+<div class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors z-10"></div>
+<img alt="Yoga Online" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A clean, minimalist home office space with a yoga mat spread out. A laptop is visible on a low wooden table showing a serene yoga instructor. The room is filled with soft, diffused daylight and decorated with a single potted plant and neutral-toned pillows. The overall style is modern minimalist with a warm, domestic feel, reflecting an accessible and professional online yoga practice environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUGn5OhsL7q1Mx7QSEB5jwELxFjXo9Nm_NEJ6z7t5_UXPK3uOriCgNocZM65kFLeIQ8ae7nwU8ob1rDeyKnOFX975Wg_Y-JKUq9O2vIsJS9z5zK48foeXFughOCoeRD57ianYAWkvkjISxbcrGyqw79pJFQFpZZkvNBh_e2lMG3MQ2KrjcBIcLiR8nHbdIO02o5526XFA9DzwGd08DzcX4O8qlrK8EbEfMzFyHaH4YTg29sdcFsb9eBIcTBymjQkrapZ6dH_K0KA"/>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">Yoga Online</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6 flex-grow">Pratique no conforto do seu lar, com aulas gravadas e encontros ao vivo via Zoom.</p>
+<button class="w-full py-3 border border-taupe-dark text-taupe-dark rounded-full font-label-caps text-label-caps hover:bg-taupe-dark hover:text-white transition-colors">SAIBA MAIS</button>
+</div>
+</div>
+<!-- Inspire Trip -->
+<div class="group bg-white rounded-[20px] overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-beige-mid/20 flex flex-col">
+<div class="h-48 overflow-hidden relative">
+<div class="absolute inset-0 bg-terracotta/10 group-hover:bg-transparent transition-colors z-10"></div>
+<img alt="Inspire Trip" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A breathtaking landscape of a tropical beach at sunrise with palm tree silhouettes. A small group of women is seen in the distance, walking along the shoreline in peaceful contemplation. The sky is a gradient of soft pinks, oranges, and warm gold. The mood is adventurous yet deeply relaxing, symbolizing a journey toward self-discovery and retreat into nature's beauty." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUN23Z4VT5bG9-RTQmnoQkkBuCBOaNNazwIxfIzMWEN4QUYt7Np1RvnuRIvD_8CUZkTHzVwSk1tk8KJZkrTj2vDBZXbeChoyVrz8WohtoC8XWOtX_t09cUQvSdw_ErOoH8BAWSMfy67FPJugAN6iFccMCqscs8yl5giEX0LpVZHOt_5KPYBNHtMyAevAcY97OPNDUGlkuEc8Daszb59nDlds4jVnFuG5vbYp7X63sZyy_UYDdAuhLrtWovIvyqRywgz0a8v_163A"/>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">Inspire Trip</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6 flex-grow">Retiros imersivos em locais paradisíacos para um resgate profundo e coletivo.</p>
+<button class="w-full py-3 border border-taupe-dark text-taupe-dark rounded-full font-label-caps text-label-caps hover:bg-taupe-dark hover:text-white transition-colors">SAIBA MAIS</button>
+</div>
+</div>
+<!-- Aula Presencial -->
+<div class="group bg-white rounded-[20px] overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-beige-mid/20 flex flex-col">
+<div class="h-48 overflow-hidden relative">
+<div class="absolute inset-0 bg-olive-light/10 group-hover:bg-transparent transition-colors z-10"></div>
+<img alt="Aula Presencial" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A spacious and airy yoga studio with high ceilings and polished wooden floors. Natural light streams in through large windows. Yoga mats are neatly arranged in a circle, and the room feels calm and inviting. The aesthetic is clean, botanical, and upscale, creating a sense of a premium, dedicated space for physical and spiritual practice in person." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAl6j8bCm20XvbpkXbvm7BFutUMqXvtm9DuWv4FPCL8tFHosSc5rCdbO4Tf_YYOhAWgGgfHRTXkBHelnzzbG3w0vjk4CKq4Xdn1DvUz_-DwqC5OVEXCvFLjSeiUaXZE-m1ZXq4YIHPs9_-HWWVJefr2xTL7ML_f_Bam3TenrngREFv4jNtzv_3wJo2JPtR0yr1r3TtMSPU044ZAkTaU3Mp94RfnVQEiR-3Ywfi0VKl2GeSoX1UngTy3k920cBAZbYOG2IPiZmUSGQ"/>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">Aula Presencial</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6 flex-grow">Prática em estúdio boutique com correção individualizada e ajuste de mãos.</p>
+<button class="w-full py-3 border border-taupe-dark text-taupe-dark rounded-full font-label-caps text-label-caps hover:bg-taupe-dark hover:text-white transition-colors">SAIBA MAIS</button>
+</div>
+</div>
+<!-- Acroyoga -->
+<div class="group bg-white rounded-[20px] overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-beige-mid/20 flex flex-col">
+<div class="h-48 overflow-hidden relative">
+<div class="absolute inset-0 bg-brown-mid/10 group-hover:bg-transparent transition-colors z-10"></div>
+<img alt="Acroyoga" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Two women performing a graceful acroyoga pose in a sun-filled outdoor garden. They show strength, balance, and trust in their movement. The surrounding environment is lush with green leaves and soft shadows. The lighting is bright and cheerful, highlighting the dynamic and playful side of the practice. The overall style is organic and sophisticated, celebrating female connection and resilience." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCALm8fqoVGH-BUuv6IqO0I35eb04xt3YVxMNpU0ay-7hNA9ck-rjB6OnkZLOKSsb28kt2zWFWuu-jXUAqOSV4bXCqAVmtlPF2-WxFVtt7FkpL5KNaoB0W7oy0hWIKVgRk-GM7lNY0E4nARWWcFvBtz-Bm6TvCpHqZnMtWUYt2DZzrgzkaGSJPrmmB3y8pK0Uog2-blh90lF01qd3QBPrqo8ktDwsp2jc7H-lzll-86P9jmgD6SWfqm4Ybn6w-2ud0IwHcyUzD-FA"/>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">Acroyoga</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6 flex-grow">Exploração do movimento em dupla, trabalhando confiança, força e ludicidade.</p>
+<button class="w-full py-3 border border-taupe-dark text-taupe-dark rounded-full font-label-caps text-label-caps hover:bg-taupe-dark hover:text-white transition-colors">SAIBA MAIS</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Resgate, Presença, Autenticidade -->
+<section class="py-2xl bg-surface-container-highest">
+<div class="max-w-[1200px] mx-auto px-8 grid md:grid-cols-3 gap-12 text-center">
+<div class="space-y-6">
+<div class="w-20 h-20 bg-cana-pale rounded-full flex items-center justify-center mx-auto mb-8 shadow-inner">
+<span class="material-symbols-outlined text-primary text-4xl">eco</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary italic">Resgate</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Trazer de volta partes suas que foram silenciadas pela rotina e pelas obrigações externas.</p>
+</div>
+<div class="space-y-6">
+<div class="w-20 h-20 bg-olive-muted rounded-full flex items-center justify-center mx-auto mb-8 shadow-inner">
+<span class="material-symbols-outlined text-primary text-4xl">self_improvement</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary italic">Presença</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Habitar o agora. Sentir cada respiração e movimento como um ato consciente de existência.</p>
+</div>
+<div class="space-y-6">
+<div class="w-20 h-20 bg-beige-mid rounded-full flex items-center justify-center mx-auto mb-8 shadow-inner">
+<span class="material-symbols-outlined text-primary text-4xl">favorite</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary italic">Autenticidade</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Despir as máscaras e encontrar a potência da sua verdade, sem comparações ou filtros.</p>
+</div>
+</div>
+</section>
+<!-- Planos & Investimento -->
+<section class="py-2xl px-8 max-w-[1000px] mx-auto" id="precos">
+<div class="text-center mb-16">
+<span class="font-label-caps text-label-caps text-taupe-dark mb-4 block">INVESTIMENTO</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">Escolha sua Experiência</h2>
+</div>
+<div class="grid md:grid-cols-2 gap-12">
+<!-- Online -->
+<div class="relative bg-white rounded-[32px] p-10 shadow-xl border border-beige-mid/20 hover:-translate-y-2 transition-transform duration-300">
+<div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-terracotta text-white px-6 py-1 rounded-full font-label-caps text-[10px] tracking-widest">MAIS FLEXÍVEL</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2 text-center">Experiência Online</h3>
+<div class="flex items-baseline justify-center gap-1 mb-8">
+<span class="font-body-sm text-body-sm text-on-surface-variant">R$</span>
+<span class="font-headline-lg text-headline-lg text-brown-dark">760</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/mês</span>
+</div>
+<ul class="space-y-4 mb-10">
+<li class="flex items-center gap-3 font-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-primary">done</span> Acesso vitalício às aulas gravadas
+                    </li>
+<li class="flex items-center gap-3 font-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-primary">done</span> 2 encontros ao vivo por semana
+                    </li>
+<li class="flex items-center gap-3 font-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-primary">done</span> Comunidade exclusiva no Telegram
+                    </li>
+<li class="flex items-center gap-3 font-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-primary">done</span> Mentoria em grupo mensal
+                    </li>
+</ul>
+<button class="w-full py-5 bg-primary text-white rounded-full font-label-caps text-label-caps hover:bg-brown-mid transition-all">COMEÇAR AGORA</button>
+</div>
+<!-- Presencial -->
+<div class="bg-surface-container rounded-[32px] p-10 border border-beige-mid/40 hover:-translate-y-2 transition-transform duration-300">
+<h3 class="font-headline-md text-headline-md text-primary mb-2 text-center">Aula Presencial</h3>
+<div class="flex items-baseline justify-center gap-1 mb-8">
+<span class="font-body-sm text-body-sm text-on-surface-variant">R$</span>
+<span class="font-headline-lg text-headline-lg text-brown-dark">480</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/mês</span>
+</div>
+<ul class="space-y-4 mb-10">
+<li class="flex items-center gap-3 font-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-primary">done</span> 2 aulas presenciais por semana
+                    </li>
+<li class="flex items-center gap-3 font-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-primary">done</span> Turmas reduzidas (máx 8 pessoas)
+                    </li>
+<li class="flex items-center gap-3 font-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-primary">done</span> Todo material incluso no estúdio
+                    </li>
+<li class="flex items-center gap-3 font-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-primary">done</span> Chá e frutas pós-prática
+                    </li>
+</ul>
+<button class="w-full py-5 border-2 border-primary text-primary rounded-full font-label-caps text-label-caps hover:bg-primary hover:text-white transition-all">CONHECER ESTÚDIO</button>
+</div>
+</div>
+</section>
+<!-- Relatos de Reencontro -->
+<section class="py-2xl px-8 bg-white">
+<div class="max-w-[1200px] mx-auto">
+<div class="text-center mb-16">
+<span class="font-label-caps text-label-caps text-taupe-dark mb-4 block">HISTÓRIAS DE RESGATE</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">Relatos de Reencontro</h2>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="bg-surface-bright p-8 rounded-[24px] shadow-sm border border-beige-mid/10">
+<span class="material-symbols-outlined text-terracotta text-4xl mb-4">format_quote</span>
+<p class="font-headline-sm text-headline-sm text-brown-dark italic mb-6">"Cheguei buscando aliviar as dores nas costas, e acabei curando dores que eu nem sabia que tinha no coração."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-cana-pale"></div>
+<div>
+<p class="font-label-caps text-label-caps font-bold">CARLA M.</p>
+<p class="text-[10px] text-on-surface-variant uppercase tracking-wider">Advogada, 44 anos</p>
+</div>
+</div>
+</div>
+<div class="bg-surface-bright p-8 rounded-[24px] shadow-sm border border-beige-mid/10 mt-8">
+<span class="material-symbols-outlined text-terracotta text-4xl mb-4">format_quote</span>
+<p class="font-headline-sm text-headline-sm text-brown-dark italic mb-6">"As aulas da Gi são meu oásis de sanidade em uma semana caótica. Ela tem um dom especial de nos trazer de volta para casa."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-olive-muted"></div>
+<div>
+<p class="font-label-caps text-label-caps font-bold">FERNANDA R.</p>
+<p class="text-[10px] text-on-surface-variant uppercase tracking-wider">Arquiteta, 39 anos</p>
+</div>
+</div>
+</div>
+<div class="bg-surface-bright p-8 rounded-[24px] shadow-sm border border-beige-mid/10">
+<span class="material-symbols-outlined text-terracotta text-4xl mb-4">format_quote</span>
+<p class="font-headline-sm text-headline-sm text-brown-dark italic mb-6">"Pela primeira vez em anos, eu sinto que ocupo meu corpo com prazer e não apenas com cansaço. Gratidão, Gi."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-beige-dark"></div>
+<div>
+<p class="font-label-caps text-label-caps font-bold">JULIANA S.</p>
+<p class="text-[10px] text-on-surface-variant uppercase tracking-wider">Psicóloga, 51 anos</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ (Acordeão) -->
+<section class="py-2xl px-8 max-w-[800px] mx-auto" id="faq">
+<div class="text-center mb-16">
+<span class="font-label-caps text-label-caps text-taupe-dark mb-4 block">ESCLARECIMENTOS</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">Dúvidas Frequentes</h2>
+</div>
+<div class="space-y-4">
+<details class="group bg-surface-container rounded-2xl overflow-hidden border border-beige-mid/20" open="">
+<summary class="flex justify-between items-center p-6 cursor-pointer hover:bg-surface-container-high transition-colors list-none">
+<span class="font-headline-sm text-headline-sm text-primary">Nunca fiz yoga, posso começar?</span>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="p-6 pt-0 font-body-md text-on-surface-variant border-t border-beige-mid/10">
+                    Com certeza. Nossas práticas são desenhadas para respeitar o limite de cada corpo, com variações para iniciantes e praticantes avançados. O yoga é para todos os corpos.
+                </div>
+</details>
+<details class="group bg-surface-container rounded-2xl overflow-hidden border border-beige-mid/20">
+<summary class="flex justify-between items-center p-6 cursor-pointer hover:bg-surface-container-high transition-colors list-none">
+<span class="font-headline-sm text-headline-sm text-primary">Como funcionam as aulas online?</span>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="p-6 pt-0 font-body-md text-on-surface-variant border-t border-beige-mid/10">
+                    Temos uma plataforma própria onde você acessa aulas gravadas e o link para os encontros ao vivo via Zoom. Tudo é organizado para que você não perca nenhum momento do seu resgate.
+                </div>
+</details>
+<details class="group bg-surface-container rounded-2xl overflow-hidden border border-beige-mid/20">
+<summary class="flex justify-between items-center p-6 cursor-pointer hover:bg-surface-container-high transition-colors list-none">
+<span class="font-headline-sm text-headline-sm text-primary">Qual a duração dos retiros Inspire Trip?</span>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="p-6 pt-0 font-body-md text-on-surface-variant border-t border-beige-mid/10">
+                    Nossos retiros geralmente acontecem em feriados prolongados ou fins de semana, variando de 3 a 5 dias de imersão total em natureza e autocuidado.
+                </div>
+</details>
+</div>
+</section>
+<!-- Vamos conversar? (Contato) -->
+<section class="py-2xl px-8 bg-surface-container-low overflow-hidden relative">
+<!-- Decorative Branch Background -->
+<span class="material-symbols-outlined absolute -bottom-20 -left-20 text-olive-muted/10 text-[400px] pointer-events-none rotate-45">account_tree</span>
+<div class="max-w-[1200px] mx-auto flex flex-col md:flex-row gap-20 relative z-10">
+<div class="w-full md:w-1/2">
+<span class="font-label-caps text-label-caps text-taupe-dark mb-4 block">CONTATO</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-8">Vamos conversar?</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12">
+                    Sinta-se à vontade para tirar dúvidas, agendar uma aula experimental ou simplesmente compartilhar sua história. Estamos aqui para te ouvir.
+                </p>
+<div class="space-y-6">
+<div class="flex items-center gap-4 text-primary">
+<span class="material-symbols-outlined bg-white p-3 rounded-full shadow-sm">mail</span>
+<span class="font-body-md">contato@giborbayoga.com.br</span>
+</div>
+<div class="flex items-center gap-4 text-primary">
+<span class="material-symbols-outlined bg-white p-3 rounded-full shadow-sm">call</span>
+<span class="font-body-md">(11) 98877-6655</span>
+</div>
+<div class="flex items-center gap-4 text-primary">
+<span class="material-symbols-outlined bg-white p-3 rounded-full shadow-sm">location_on</span>
+<span class="font-body-md">Vila Madalena, São Paulo - SP</span>
+</div>
+</div>
+</div>
+<div class="w-full md:w-1/2 bg-white p-10 rounded-[32px] shadow-2xl shadow-brown-dark/5 border border-beige-mid/10">
+<form class="space-y-6" onsubmit="event.preventDefault(); alert('Mensagem enviada com carinho!')">
+<div>
+<label class="font-label-caps text-label-caps text-on-surface-variant block mb-2">SEU NOME</label>
+<input class="w-full bg-cream border-beige-mid/50 rounded-full px-6 py-4 focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none" placeholder="Como deseja ser chamada?" type="text"/>
+</div>
+<div>
+<label class="font-label-caps text-label-caps text-on-surface-variant block mb-2">SEU MELHOR E-MAIL</label>
+<input class="w-full bg-cream border-beige-mid/50 rounded-full px-6 py-4 focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none" placeholder="email@exemplo.com" type="email"/>
+</div>
+<div>
+<label class="font-label-caps text-label-caps text-on-surface-variant block mb-2">QUAL SUA INTENÇÃO?</label>
+<select class="w-full bg-cream border-beige-mid/50 rounded-full px-6 py-4 focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none appearance-none">
+<option>Desejo começar a praticar</option>
+<option>Informações sobre Retiros</option>
+<option>Aula Presencial</option>
+<option>Outros Assuntos</option>
+</select>
+</div>
+<div>
+<label class="font-label-caps text-label-caps text-on-surface-variant block mb-2">SUA MENSAGEM</label>
+<textarea class="w-full bg-cream border-beige-mid/50 rounded-[24px] px-6 py-4 focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none resize-none" placeholder="Conte-nos um pouco sobre você..." rows="4"></textarea>
+</div>
+<button class="w-full py-5 bg-primary text-white rounded-full font-label-caps text-label-caps hover:bg-brown-mid transition-all shadow-lg shadow-primary/20">ENVIAR MENSAGEM</button>
+</form>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-container-high border-t border-beige-mid/50 py-12 px-8">
+<div class="max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="font-headline-sm text-headline-sm text-brown-mid">Gi Borba Yoga</div>
+<div class="flex gap-8">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-terracotta transition-colors" href="#">Privacidade</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-terracotta transition-colors" href="#">Termos de Uso</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-terracotta transition-colors" href="#">Contato</a>
+</div>
+<div class="flex gap-6">
+<a class="text-primary hover:text-terracotta transition-all opacity-80 hover:opacity-100" href="#">
+<svg class="w-6 h-6 fill-current" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+</a>
+<a class="text-primary hover:text-terracotta transition-all opacity-80 hover:opacity-100" href="#">
+<svg class="w-6 h-6 fill-current" viewbox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg>
+</a>
+</div>
+</div>
+<div class="mt-8 text-center font-body-sm text-body-sm text-on-surface-variant opacity-60">
+            © 2024 Gi Borba Yoga. Cultivando presença e resgate pessoal.
+        </div>
+</footer>
+<script>
+        // Smooth scroll interaction for the nav
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Simple animation on scroll trigger
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100');
+                    entry.target.classList.remove('translate-y-10');
+                    entry.target.classList.remove('opacity-0');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+    </script>
+</body></html>
