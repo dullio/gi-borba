@@ -22,27 +22,27 @@ Página Institucional Única para Aulas de Yoga da experiente professora Gi Borb
 
 ## Design
 
-Utilizar o design/template definido nos arquivos da pasta `C:\Users\Dullio Macedo\OneDrive\Documents\Arquivos Antigravity\workspaces\dm-content-creator\design`
+Utilizar oa identidade visual definida nos arquivos da pasta `C:\Users\Dullio Macedo\OneDrive\Documents\Arquivos Antigravity\workspaces\giborba\website-gi-borba\gi-borba\design`
 
 ## Fontes
 
-Localizadas em `C:\Users\Dullio Macedo\OneDrive\Documents\Arquivos Antigravity\workspaces\dm-content-creator\gi-borba\fonts`
+Localizadas em `C:\Users\Dullio Macedo\OneDrive\Documents\Arquivos Antigravity\workspaces\giborba\website-gi-borba\gi-borba\fonts`
 
 ### Imagens
 
-Pasta com as imagens: `C:\Users\Dullio Macedo\OneDrive\Documents\Arquivos Antigravity\workspaces\dm-content-creator\gi-borba\images`
+Pasta com as imagens: `C:\Users\Dullio Macedo\OneDrive\Documents\Arquivos Antigravity\workspaces\giborba\website-gi-borba\gi-borba\images`
 
 - Foto da Gi `C:\Users\Dullio Macedo\OneDrive\Documents\Arquivos Antigravity\workspaces\giborba\website-gi-borba\gi-borba\images\prof-yoga-gi-borba.png`
 
 - Logos:
 
-  - `C:\Users\Dullio Macedo\OneDrive\Documents\Arquivos Antigravity\workspaces\dm-content-creator\gi-borba\images\Logo Branco Sem Fundo.png`
-  - `C:\Users\Dullio Macedo\OneDrive\Documents\Arquivos Antigravity\workspaces\dm-content-creator\gi-borba\images\Logo Marrom Sem Fundo.png`
-  - `C:\Users\Dullio Macedo\OneDrive\Documents\Arquivos Antigravity\workspaces\dm-content-creator\gi-borba\images\Logo Preto Sem Fundo.png`
+  - `C:\Users\Dullio Macedo\OneDrive\Documents\Arquivos Antigravity\workspaces\giborba\website-gi-borba\gi-borba\images\Logo Branco Sem Fundo.png`
+  - `C:\Users\Dullio Macedo\OneDrive\Documents\Arquivos Antigravity\workspaces\giborba\website-gi-borba\gi-borba\images\Logo Marrom Sem Fundo.png`
+  - `C:\Users\Dullio Macedo\OneDrive\Documents\Arquivos Antigravity\workspaces\giborba\website-gi-borba\gi-borba\images\Logo Preto Sem Fundo.png`
 
 ### Videos
 
-Pasta: `C:\Users\Dullio Macedo\OneDrive\Documents\Arquivos Antigravity\workspaces\dm-content-creator\gi-borba\videos`
+Pasta: `C:\Users\Dullio Macedo\OneDrive\Documents\Arquivos Antigravity\workspaces\giborba\website-gi-borba\gi-borba\videos`
 
 - VSL: `videos\vsl-gi-borba-yoga-mae.mp4` utilizar o formato retrato (1080x1920)
 
