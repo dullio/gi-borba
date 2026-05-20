@@ -727,7 +727,7 @@ p + p { margin-top: 16px; }
   transition: all var(--transition); font-size: 15px; color: var(--brown-dark);
 }
 .contato-link:hover { border-color: var(--olive); background: var(--beige-light); }
-.contato-link-icon { font-size: 20px; color: var(--olive); margin-right: 4px; }
+.contato-link-icon { width: 24px; height: 24px; display: block; object-fit: contain; flex-shrink: 0; }
 .contato-link-text strong { display: block; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--taupe-dark); margin-bottom: 2px; }
 
 .contato-form { background: var(--cream); border-radius: var(--radius); padding: 40px 36px; border: 1px solid var(--beige-mid); }
@@ -769,10 +769,18 @@ p + p { margin-top: 16px; }
 .footer-social { display: flex; gap: 12px; margin-top: 8px; }
 .footer-social a {
   width: 36px; height: 36px; border-radius: 50%;
-  background: rgba(255,255,255,.08); display: flex; align-items: center; justify-content: center;
-  font-size: 16px; transition: all var(--transition); color: rgba(253,250,246,.75);
+  background: rgba(255,255,255,.08);
+  display: block; position: relative;
+  transition: all var(--transition);
 }
-.footer-social a:hover { background: var(--olive); color: var(--white); }
+.footer-social a:hover { background: var(--olive); }
+.social-logo {
+  width: 20px; height: 20px;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  display: block; object-fit: contain;
+}
 .footer-divider { height: 1px; background: rgba(255,255,255,.08); margin-bottom: 28px; }
 .footer-bottom { display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; align-items: center; }
 .footer-legal { font-size: 11px; color: rgba(253,250,246,.4); line-height: 1.7; max-width: 600px; }
