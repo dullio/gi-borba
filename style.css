@@ -69,6 +69,7 @@ h1, h2, h3 { font-family: var(--font-display); line-height: 1.1; color: var(--br
 h2 { font-size: clamp(32px, 5vw, 56px); font-weight: 300; margin-bottom: 24px; }
 h2 em { color: var(--olive); font-style: italic; }
 h3 { font-size: clamp(20px, 2.5vw, 26px); font-weight: 500; margin-bottom: 12px; }
+h3 .highlight { color: var(--boho); font-weight: 700; }
 p { font-size: 17px; font-weight: 300; color: var(--brown-mid); line-height: 1.85; }
 p + p { margin-top: 16px; }
 
@@ -162,9 +163,9 @@ p + p { margin-top: 16px; }
    HERO
 ───────────────────────────────────────── */
 #hero {
-  min-height: calc(100vh - var(--nav-h));
-  margin-top: var(--nav-h);
-  padding: 80px 24px 80px;
+  margin-top: 68px;
+  min-height: 100vh;
+  padding: 80px 24px;
   background:
     url('images/gi-borba-yoga-hero.png') center center / cover no-repeat;
   display: flex; align-items: center; justify-content: center;
