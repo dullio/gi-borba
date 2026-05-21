@@ -554,18 +554,29 @@ p + p { margin-top: 16px; }
    DEPOIMENTOS
 ───────────────────────────────────────── */
 #depoimentos { background: var(--cream); overflow: hidden; }
-.depo-quotes { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; margin-bottom: 64px; }
+.depo-quotes { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-bottom: 64px; }
 .depo-quote {
-  background: var(--white); border-radius: var(--radius); padding: 32px;
+  background: var(--white); border-radius: var(--radius); padding: 28px;
   box-shadow: var(--shadow-sm); border: 1px solid var(--beige-mid);
-  position: relative;
+  position: relative; overflow: hidden;
 }
 .depo-quote::before {
   content: '\201C'; font-family: var(--font-display); font-size: 80px; line-height: 1;
-  color: var(--beige-mid); position: absolute; top: 16px; left: 24px;
+  color: rgba(217,206,187,.55); position: absolute; top: 10px; right: 24px;
 }
-.depo-text { font-size: 17px; color: var(--brown-dark); line-height: 1.8; margin-top: 32px; font-style: italic; }
-.depo-author { font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--taupe); margin-top: 20px; }
+.depo-author-row {
+  display: flex; align-items: center; gap: 14px; position: relative; z-index: 1;
+  min-height: 64px; margin-bottom: 22px;
+}
+.depo-avatar {
+  width: 64px; height: 64px; border-radius: 50%; object-fit: cover;
+  border: 2px solid var(--beige-light); box-shadow: var(--shadow-sm); flex-shrink: 0;
+}
+.depo-text { font-size: 16px; color: var(--brown-dark); line-height: 1.8; font-style: italic; position: relative; z-index: 1; }
+.depo-author {
+  font-size: 11px; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--taupe-dark); font-weight: 500; line-height: 1.4;
+}
 
 /* Video carousel */
 .depo-carousel-section h3 { text-align: center; margin-bottom: 32px; }
